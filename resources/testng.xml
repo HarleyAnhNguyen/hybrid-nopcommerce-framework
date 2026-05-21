@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="NopCommerce Automation Testing" verbose="1">
-    <test name="Run on Chrome browser">
+    <test name="Run on Firefox browser">
         <classes>
-            <class name="com.nopcommerce.users.Level_01_Repeat_Yourself"/>
+            <class name="com.nopcommerce.users.Level_02_BasePage_Init"/>
+            <class name="com.nopcommerce.users.Level_02_BasePage_StaticMethod"/>
         </classes>
     </test>
 </suite>

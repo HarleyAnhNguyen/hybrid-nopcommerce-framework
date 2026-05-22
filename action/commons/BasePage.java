@@ -365,6 +365,7 @@ public class BasePage {
                 .until(ExpectedConditions.elementToBeClickable(getXPath(locator)));
     }
 
+
     public void waitForAlertPresence(WebDriver driver) {
         new WebDriverWait(driver, Duration.ofSeconds(15))
                 .until(ExpectedConditions.alertIsPresent());

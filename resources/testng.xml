@@ -2,8 +2,23 @@
 
 <suite name="NopCommerce Automation Testing" verbose="1">
     <test name="Run on Firefox browser">
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name="com.nopcommerce.users.Level_03_Page_Object_Pattern"/>
+            <class name="com.nopcommerce.users.Level_04_Multiple_Browser"/>
+        </classes>
+    </test>
+
+    <test name="Run on Chrome browser">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.nopcommerce.users.Level_04_Multiple_Browser"/>
+        </classes>
+    </test>
+
+    <test name="Run on Edge browser">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.nopcommerce.users.Level_04_Multiple_Browser"/>
         </classes>
     </test>
 </suite>
